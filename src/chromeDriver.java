@@ -21,7 +21,9 @@ public class chromeDriver {
 	@Test
 	public static void main(String[] args) throws IOException {
 		
-		
+		//TODO прикрутить логирование! 
+	    //http://automation-remarks.com/selenium-logs/
+	
 		String handlehost;
 		
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\lib\\chromedriver.exe" );
