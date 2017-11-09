@@ -23,6 +23,8 @@ public class chromeDriver {
 		
 		//TODO прикрутить логирование! 
 	    //http://automation-remarks.com/selenium-logs/
+		//TODO и добавить отчеты! 
+		//http://perfect-test.com/index.php/ru/technologies-menu-rus/other-technologies-menu-rus/20-not-categorised-technologies-rus
 	
 		String handlehost;
 		
