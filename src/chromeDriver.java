@@ -54,6 +54,18 @@ public class chromeDriver {
 		chromeDriver.findElement(By.linkText("œ–Œ√–¿ÃÃ€")).click();
 		checkTitle(chromeDriver, "œÓ„‡ÏÏ˚ - 4PDA");
 		takeScreenshot(chromeDriver, "software.png");
+		
+		chromeDriver.navigate().back();
+		
+		chromeDriver.findElement(By.linkText("»√–€")).click();
+		checkTitle(chromeDriver, "»„˚ - 4PDA");
+		takeScreenshot(chromeDriver, "games.png");
+		
+		chromeDriver.navigate().back();
+		
+		chromeDriver.findElement(By.linkText("—“¿“‹»")).click();
+		checkTitle(chromeDriver, "—Ú‡Ú¸Ë - 4PDA");
+		takeScreenshot(chromeDriver, "articles.png");
 	
 		TearDown(chromeDriver);
 	
@@ -64,7 +76,7 @@ public class chromeDriver {
 	}
 	
 	private static void takeScreenshot(WebDriver chromeDriver, String filename) throws IOException {
-		DateFormat df = new SimpleDateFormat("dd.MM.yyyy(hh.mm)");
+		DateFormat df = new SimpleDateFormat("dd.MM.yyyy(HH.mm)");
 		String FILE_PATH = "d:\\Selenium\\Chrome\\";
 		String fileFormat = df.format(new Date()) + "." + filename; 
 		File scrfile2 = ((TakesScreenshot)chromeDriver).getScreenshotAs(OutputType.FILE);
